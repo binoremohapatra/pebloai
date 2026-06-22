@@ -1,0 +1,51 @@
+name: peblo_ai_buddy
+description: "Peblo AI Story Buddy & Quiz — an accessible, animated, kid-friendly story and quiz screen."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management — compile-safe, auto-disposed providers with selective rebuild support
+  flutter_riverpod: ^2.5.1
+
+  # Text-to-speech — platform-channel based TTS engine (wrapped behind ITtsService)
+  flutter_tts: ^4.2.0
+
+  # Celebration particles for correct answer
+  confetti: ^0.7.0
+
+  # Playful kid-friendly typography — Nunito applied app-wide via GoogleFonts.nunitoTextTheme()
+  google_fonts: ^6.1.0
+
+  # Immutable data models with generated ==, hashCode, copyWith, fromJson
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.9.0
+  audioplayers: ^6.7.1
+  sensors_plus: ^7.0.0
+  rive: ^0.13.1
+  http: ^1.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Linting ruleset — enforces prefer_const_constructors and other performance rules
+  flutter_lints: ^4.0.0
+
+  # Code generation for freezed models and JSON serialisation
+  build_runner: ^2.4.9
+  freezed: ^2.5.2
+  json_serializable: ^6.8.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/sounds/
